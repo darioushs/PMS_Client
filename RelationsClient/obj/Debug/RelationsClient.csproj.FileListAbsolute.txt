@@ -1,0 +1,6 @@
+C:\Users\dario\source\repos\RelationsClient\RelationsClient\bin\Debug\RelationsClient.exe.config
+C:\Users\dario\source\repos\RelationsClient\RelationsClient\bin\Debug\RelationsClient.exe
+C:\Users\dario\source\repos\RelationsClient\RelationsClient\bin\Debug\RelationsClient.pdb
+C:\Users\dario\source\repos\RelationsClient\RelationsClient\obj\Debug\RelationsClient.csprojAssemblyReference.cache
+C:\Users\dario\source\repos\RelationsClient\RelationsClient\obj\Debug\RelationsClient.exe
+C:\Users\dario\source\repos\RelationsClient\RelationsClient\obj\Debug\RelationsClient.pdb
