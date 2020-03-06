@@ -12,49 +12,49 @@ namespace RelationsClient.PMS_API {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="PMS_API.IPMS_API")]
-    public interface IPMS_API {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="PMS_API.IUserManagement")]
+    public interface IUserManagement {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPMS_API/Ping", ReplyAction="http://tempuri.org/IPMS_API/PingResponse")]
-        void Ping();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserManagement/Login", ReplyAction="http://tempuri.org/IUserManagement/LoginResponse")]
+        int Login(string username, string password);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPMS_API/Ping", ReplyAction="http://tempuri.org/IPMS_API/PingResponse")]
-        System.Threading.Tasks.Task PingAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserManagement/Login", ReplyAction="http://tempuri.org/IUserManagement/LoginResponse")]
+        System.Threading.Tasks.Task<int> LoginAsync(string username, string password);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IPMS_APIChannel : RelationsClient.PMS_API.IPMS_API, System.ServiceModel.IClientChannel {
+    public interface IUserManagementChannel : RelationsClient.PMS_API.IUserManagement, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class PMS_APIClient : System.ServiceModel.ClientBase<RelationsClient.PMS_API.IPMS_API>, RelationsClient.PMS_API.IPMS_API {
+    public partial class UserManagementClient : System.ServiceModel.ClientBase<RelationsClient.PMS_API.IUserManagement>, RelationsClient.PMS_API.IUserManagement {
         
-        public PMS_APIClient() {
+        public UserManagementClient() {
         }
         
-        public PMS_APIClient(string endpointConfigurationName) : 
+        public UserManagementClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public PMS_APIClient(string endpointConfigurationName, string remoteAddress) : 
+        public UserManagementClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public PMS_APIClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public UserManagementClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public PMS_APIClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public UserManagementClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public void Ping() {
-            base.Channel.Ping();
+        public int Login(string username, string password) {
+            return base.Channel.Login(username, password);
         }
         
-        public System.Threading.Tasks.Task PingAsync() {
-            return base.Channel.PingAsync();
+        public System.Threading.Tasks.Task<int> LoginAsync(string username, string password) {
+            return base.Channel.LoginAsync(username, password);
         }
     }
 }

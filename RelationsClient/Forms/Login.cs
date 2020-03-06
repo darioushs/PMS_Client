@@ -20,8 +20,7 @@ namespace RelationsClient.Forms
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            PMS_API.PMS_APIClient client = new PMS_API.PMS_APIClient()
-            client.login("username", "1234");
+            
         }
     }
 }

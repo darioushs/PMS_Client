@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RelationsClient.Classes;
 
 namespace RelationsClient
 {
@@ -10,10 +11,9 @@ namespace RelationsClient
     {
         static void Main(string[] args)
         {
-            ServiceReference1.DatabaseConnectorClient databaseConnectorClient = new ServiceReference1.DatabaseConnectorClient();
-            Console.WriteLine(databaseConnectorClient.hi("dario"));
+            User user = new User();
+            user.Login("", "");
             Console.ReadLine();
-
         }
     }
 }

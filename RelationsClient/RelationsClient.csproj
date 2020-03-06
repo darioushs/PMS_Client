@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\User.cs" />
     <Compile Include="Connected Services\PMS_API\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -64,6 +65,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Connected Services\PMS_API\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\PMS_API\item1.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\PMS_API\PMS_API.wsdl" />
